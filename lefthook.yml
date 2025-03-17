@@ -20,7 +20,7 @@ EXAMPLE USAGE:
 pre-commit:
   parallel: true
   jobs:
-    - run: npm run eslint --fix {staged_files}
+    - run: npm run lint --fix {staged_files}
       glob: '*.{js,ts,jsx,tsx}'
     - run: npm run format:hook {staged_files}
       glob: '*.{js,ts,jsx,tsx,json,css,scss,md,html}'
