@@ -1,6 +1,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
 @import 'tailwindcss';
-
+@tailwind utilities;
 *,
 *::before,
 *::after {

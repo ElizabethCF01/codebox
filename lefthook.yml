@@ -21,6 +21,6 @@ pre-commit:
   parallel: true
   jobs:
     - run: npm run lint --fix {staged_files}
-      glob: '*.{js,ts,jsx,tsx}'
+      glob: '*.{js,ts,jsx,tsx,vue}'
     - run: npm run format:hook {staged_files}
-      glob: '*.{js,ts,jsx,tsx,json,css,scss,md,html}'
+      glob: '*.{js,ts,jsx,tsx,vue,json,css,scss,md,html}'

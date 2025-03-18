@@ -41,7 +41,7 @@ import 'prismjs/components/prism-clike'
 import 'prismjs/components/prism-javascript'
 import 'prismjs/themes/prism-tomorrow.css'
 
-const htmlCode = ref('<h1>Hola, Mundo!</h1>')
+const htmlCode = ref('<h1>Hola, Mundo!👋</h1>')
 const cssCode = ref(`h1 {
    color: gray;
    font-family: sans-serif;
@@ -50,13 +50,13 @@ const jsCode = ref("console.log('Pepito')")
 const output = ref('')
 
 const highlighterHtml = (code: string) => {
-  return highlight(code, languages.html)
+  return highlight(code, languages.html, 'html')
 }
 const highlighterCss = (code: string) => {
-  return highlight(code, languages.css)
+  return highlight(code, languages.css, 'css')
 }
 const highlighterJs = (code: string) => {
-  return highlight(code, languages.js)
+  return highlight(code, languages.js, 'js')
 }
 const setCode = () => {
   output.value = `<div class="full">
