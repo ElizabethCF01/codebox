@@ -41,7 +41,7 @@ import 'prismjs/components/prism-clike'
 import 'prismjs/components/prism-javascript'
 import 'prismjs/themes/prism-tomorrow.css'
 
-const htmlCode = ref('<h1>Hola, Mundo!👋</h1>')
+const htmlCode = ref('<h1>Hello, World!👋</h1>')
 const cssCode = ref(`h1 {
    color: gray;
    font-family: sans-serif;
